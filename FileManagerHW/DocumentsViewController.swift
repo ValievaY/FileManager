@@ -9,7 +9,8 @@ import UIKit
 
 final class DocumentsViewController: UIViewController {
     
-    private let fileManager: FileManagerServiceProtocol
+    private var fileManager: FileManagerServiceProtocol
+    private let userDefaults = UserDefaults()
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView()
@@ -42,11 +43,16 @@ final class DocumentsViewController: UIViewController {
        layout()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
+    
     private func layout() {
         view.backgroundColor = .white
         view.addSubview(tableView)
         
-        var barItems = [addButton, newFolderButton]
+        let barItems = [addButton, newFolderButton]
         navigationItem.rightBarButtonItems = barItems
         
         NSLayoutConstraint.activate([
@@ -63,7 +69,10 @@ final class DocumentsViewController: UIViewController {
             showImagePicker()
         case newFolderButton:
             let alert = AlertController()
-            alert.showAlert(in: self) { [self] text in
+            alert.alert.title = "Create new folder"
+            alert.showAlert(in: self,
+                            placeholder: "Folder Name",
+                            actionText: "OK") { [self] text in
                 fileManager.createDirectory(name: text)
                 tableView.reloadData()
             }
@@ -83,6 +92,7 @@ extension DocumentsViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = UITableViewCell()
         var content = cell.defaultContentConfiguration()
         content.text = fileManager.items[indexPath.row]
+        content.secondaryText = fileManager.isDirectoryIndex(indexPath.row) ? "" : fileManager.getSizeOfFile(at: indexPath.row)
         cell.contentConfiguration = content
         if fileManager.isDirectoryIndex(indexPath.row) == true {
             cell.accessoryType = .disclosureIndicator

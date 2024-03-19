@@ -17,6 +17,8 @@ protocol FileManagerServiceProtocol {
     
     func createFile(imageName: String, image: UIImage)
     
+    func getSizeOfFile(at index: Int) -> String
+    
     func createDirectory(name: String)
     
     func removeContent(at index: Int)
