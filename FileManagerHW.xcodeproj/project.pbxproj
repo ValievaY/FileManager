@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5565FAE82BAB20E2003E00FB /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5565FAE72BAB20E2003E00FB /* KeychainSwift */; };
+		556BB4962B9F69510050B403 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BB4952B9F69510050B403 /* TabBarController.swift */; };
+		556BB4982B9F6A870050B403 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BB4972B9F6A870050B403 /* SettingsViewController.swift */; };
 		55DDB2F02B47FB7C0038BF46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB2EF2B47FB7C0038BF46 /* AppDelegate.swift */; };
 		55DDB2F22B47FB7C0038BF46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB2F12B47FB7C0038BF46 /* SceneDelegate.swift */; };
 		55DDB2F92B47FB810038BF46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55DDB2F82B47FB810038BF46 /* Assets.xcassets */; };
@@ -15,9 +18,27 @@
 		55DDB3072B480B0E0038BF46 /* FileManagerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB3062B480B0E0038BF46 /* FileManagerServiceProtocol.swift */; };
 		55DDB3092B480E010038BF46 /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB3082B480E010038BF46 /* FileManagerService.swift */; };
 		55DDB30D2B4855870038BF46 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB30C2B4855870038BF46 /* AlertController.swift */; };
+		55DDB3162B528D950038BF46 /* KeychainServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB3152B528D950038BF46 /* KeychainServiceProtocol.swift */; };
+		55DDB3182B52EB180038BF46 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB3172B52EB180038BF46 /* KeychainService.swift */; };
+		55DDB31A2B56EE660038BF46 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB3192B56EE660038BF46 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		55DDB3132B527A920038BF46 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		556BB4952B9F69510050B403 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		556BB4972B9F6A870050B403 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		55DDB2EC2B47FB7C0038BF46 /* FileManagerHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManagerHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DDB2EF2B47FB7C0038BF46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DDB2F12B47FB7C0038BF46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +49,9 @@
 		55DDB3062B480B0E0038BF46 /* FileManagerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerServiceProtocol.swift; sourceTree = "<group>"; };
 		55DDB3082B480E010038BF46 /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
 		55DDB30C2B4855870038BF46 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		55DDB3152B528D950038BF46 /* KeychainServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServiceProtocol.swift; sourceTree = "<group>"; };
+		55DDB3172B52EB180038BF46 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		55DDB3192B56EE660038BF46 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5565FAE82BAB20E2003E00FB /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +69,7 @@
 		55DDB2E32B47FB7C0038BF46 = {
 			isa = PBXGroup;
 			children = (
+				55DDB3142B528D590038BF46 /* Services */,
 				55DDB2EE2B47FB7C0038BF46 /* FileManagerHW */,
 				55DDB2ED2B47FB7C0038BF46 /* Products */,
 			);
@@ -60,10 +86,11 @@
 		55DDB2EE2B47FB7C0038BF46 /* FileManagerHW */ = {
 			isa = PBXGroup;
 			children = (
+				55DDB3192B56EE660038BF46 /* LoginViewController.swift */,
+				556BB4952B9F69510050B403 /* TabBarController.swift */,
+				556BB4972B9F6A870050B403 /* SettingsViewController.swift */,
 				55DDB3032B48089F0038BF46 /* DocumentsViewController.swift */,
 				55DDB30C2B4855870038BF46 /* AlertController.swift */,
-				55DDB3062B480B0E0038BF46 /* FileManagerServiceProtocol.swift */,
-				55DDB3082B480E010038BF46 /* FileManagerService.swift */,
 				55DDB3052B480A7B0038BF46 /* Application */,
 				55DDB2F82B47FB810038BF46 /* Assets.xcassets */,
 				55DDB2FA2B47FB810038BF46 /* LaunchScreen.storyboard */,
@@ -81,6 +108,17 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		55DDB3142B528D590038BF46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				55DDB3062B480B0E0038BF46 /* FileManagerServiceProtocol.swift */,
+				55DDB3082B480E010038BF46 /* FileManagerService.swift */,
+				55DDB3152B528D950038BF46 /* KeychainServiceProtocol.swift */,
+				55DDB3172B52EB180038BF46 /* KeychainService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,12 +129,16 @@
 				55DDB2E82B47FB7C0038BF46 /* Sources */,
 				55DDB2E92B47FB7C0038BF46 /* Frameworks */,
 				55DDB2EA2B47FB7C0038BF46 /* Resources */,
+				55DDB3132B527A920038BF46 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = FileManagerHW;
+			packageProductDependencies = (
+				5565FAE72BAB20E2003E00FB /* KeychainSwift */,
+			);
 			productName = FileManagerHW;
 			productReference = 55DDB2EC2B47FB7C0038BF46 /* FileManagerHW.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 55DDB2E32B47FB7C0038BF46;
+			packageReferences = (
+				5565FAE62BAB20E2003E00FB /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 55DDB2ED2B47FB7C0038BF46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,12 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55DDB31A2B56EE660038BF46 /* LoginViewController.swift in Sources */,
 				55DDB3092B480E010038BF46 /* FileManagerService.swift in Sources */,
+				556BB4982B9F6A870050B403 /* SettingsViewController.swift in Sources */,
 				55DDB3042B48089F0038BF46 /* DocumentsViewController.swift in Sources */,
+				556BB4962B9F69510050B403 /* TabBarController.swift in Sources */,
 				55DDB2F02B47FB7C0038BF46 /* AppDelegate.swift in Sources */,
 				55DDB3072B480B0E0038BF46 /* FileManagerServiceProtocol.swift in Sources */,
 				55DDB30D2B4855870038BF46 /* AlertController.swift in Sources */,
+				55DDB3182B52EB180038BF46 /* KeychainService.swift in Sources */,
 				55DDB2F22B47FB7C0038BF46 /* SceneDelegate.swift in Sources */,
+				55DDB3162B528D950038BF46 /* KeychainServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5565FAE62BAB20E2003E00FB /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 20.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5565FAE72BAB20E2003E00FB /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5565FAE62BAB20E2003E00FB /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55DDB2E42B47FB7C0038BF46 /* Project object */;
 }

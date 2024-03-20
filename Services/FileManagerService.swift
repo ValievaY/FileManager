@@ -14,7 +14,13 @@ class FileManagerService: FileManagerServiceProtocol {
     var filePath: URL
     
     var items: [String] {
-        (try? FileManager.default.contentsOfDirectory(atPath: pathForFolder)) ?? []
+        var values = try! FileManager.default.contentsOfDirectory(atPath: pathForFolder)
+        if UserDefaults.standard.bool(forKey: "Sorting") {
+            values.sort()
+        } else {
+            values.sort(by: {$0>$1} )
+        }
+        return values
     }
     
     init(pathForFolder: String, filePath: URL) {
@@ -29,15 +35,30 @@ class FileManagerService: FileManagerServiceProtocol {
     }
     
     func createFile(imageName: String, image: UIImage) {
-    
-            let fileURL = filePath.appendingPathComponent(imageName)
-            guard let data = image.jpegData(compressionQuality: 1) else { return }
-        
+
+        let fileURL = filePath.appendingPathComponent(imageName)
+        guard let data = image.pngData() else { return }
+
         do {
                 try data.write(to: fileURL)
             } catch let error {
                 print("error saving file with error", error)
             }
+    }
+    
+    func getSizeOfFile(at index: Int) -> String {
+        let path = pathForFolder + "/" + items[index]
+        guard let attrs = try? FileManager.default.attributesOfItem(atPath: path) else { return ""}
+
+        let fileSize = attrs[.size] as? Int64 ?? 0
+        let bcf = ByteCountFormatter()
+                bcf.allowedUnits = [.useMB]
+                bcf.countStyle = .file
+                bcf.string(fromByteCount: fileSize)
+        if UserDefaults.standard.bool(forKey: "Size") {
+                   return bcf.string(fromByteCount: Int64(fileSize))
+               }
+        return ""
     }
     
     func createDirectory(name: String) {
