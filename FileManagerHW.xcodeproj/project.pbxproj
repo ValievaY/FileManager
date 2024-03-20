@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5565FAE82BAB20E2003E00FB /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5565FAE72BAB20E2003E00FB /* KeychainSwift */; };
 		556BB4962B9F69510050B403 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BB4952B9F69510050B403 /* TabBarController.swift */; };
 		556BB4982B9F6A870050B403 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556BB4972B9F6A870050B403 /* SettingsViewController.swift */; };
 		55DDB2F02B47FB7C0038BF46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB2EF2B47FB7C0038BF46 /* AppDelegate.swift */; };
@@ -17,12 +18,9 @@
 		55DDB3072B480B0E0038BF46 /* FileManagerServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB3062B480B0E0038BF46 /* FileManagerServiceProtocol.swift */; };
 		55DDB3092B480E010038BF46 /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB3082B480E010038BF46 /* FileManagerService.swift */; };
 		55DDB30D2B4855870038BF46 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB30C2B4855870038BF46 /* AlertController.swift */; };
-		55DDB3112B527A920038BF46 /* KeychainSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55DDB3102B527A920038BF46 /* KeychainSwift.framework */; };
-		55DDB3122B527A920038BF46 /* KeychainSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55DDB3102B527A920038BF46 /* KeychainSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55DDB3162B528D950038BF46 /* KeychainServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB3152B528D950038BF46 /* KeychainServiceProtocol.swift */; };
 		55DDB3182B52EB180038BF46 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB3172B52EB180038BF46 /* KeychainService.swift */; };
 		55DDB31A2B56EE660038BF46 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DDB3192B56EE660038BF46 /* LoginViewController.swift */; };
-		58E088FEA66F5DD09256E3F6 /* Pods_FileManagerHW.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832BB36049D498B0F0BA7205 /* Pods_FileManagerHW.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,7 +30,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				55DDB3122B527A920038BF46 /* KeychainSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +37,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		24F0476E2AB0A45F3FFE22AD /* Pods-FileManagerHW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileManagerHW.release.xcconfig"; path = "Target Support Files/Pods-FileManagerHW/Pods-FileManagerHW.release.xcconfig"; sourceTree = "<group>"; };
 		556BB4952B9F69510050B403 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		556BB4972B9F6A870050B403 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		55DDB2EC2B47FB7C0038BF46 /* FileManagerHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManagerHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,12 +49,9 @@
 		55DDB3062B480B0E0038BF46 /* FileManagerServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerServiceProtocol.swift; sourceTree = "<group>"; };
 		55DDB3082B480E010038BF46 /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
 		55DDB30C2B4855870038BF46 /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
-		55DDB3102B527A920038BF46 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DDB3152B528D950038BF46 /* KeychainServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServiceProtocol.swift; sourceTree = "<group>"; };
 		55DDB3172B52EB180038BF46 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		55DDB3192B56EE660038BF46 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		832BB36049D498B0F0BA7205 /* Pods_FileManagerHW.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FileManagerHW.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7D75D342188B251EBFEB944 /* Pods-FileManagerHW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FileManagerHW.debug.xcconfig"; path = "Target Support Files/Pods-FileManagerHW/Pods-FileManagerHW.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55DDB3112B527A920038BF46 /* KeychainSwift.framework in Frameworks */,
-				58E088FEA66F5DD09256E3F6 /* Pods_FileManagerHW.framework in Frameworks */,
+				5565FAE82BAB20E2003E00FB /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +72,6 @@
 				55DDB3142B528D590038BF46 /* Services */,
 				55DDB2EE2B47FB7C0038BF46 /* FileManagerHW */,
 				55DDB2ED2B47FB7C0038BF46 /* Products */,
-				F1955E354637409E98CDB39A /* Pods */,
-				6E8CD80BA0E016B6AF0D62BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,24 +119,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		6E8CD80BA0E016B6AF0D62BA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				55DDB3102B527A920038BF46 /* KeychainSwift.framework */,
-				832BB36049D498B0F0BA7205 /* Pods_FileManagerHW.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F1955E354637409E98CDB39A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				D7D75D342188B251EBFEB944 /* Pods-FileManagerHW.debug.xcconfig */,
-				24F0476E2AB0A45F3FFE22AD /* Pods-FileManagerHW.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,11 +126,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55DDB3002B47FB810038BF46 /* Build configuration list for PBXNativeTarget "FileManagerHW" */;
 			buildPhases = (
-				44DA9C7176A743702697B146 /* [CP] Check Pods Manifest.lock */,
 				55DDB2E82B47FB7C0038BF46 /* Sources */,
 				55DDB2E92B47FB7C0038BF46 /* Frameworks */,
 				55DDB2EA2B47FB7C0038BF46 /* Resources */,
-				EB015D53E3EEF051A9E7F80F /* [CP] Embed Pods Frameworks */,
 				55DDB3132B527A920038BF46 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -166,6 +136,9 @@
 			dependencies = (
 			);
 			name = FileManagerHW;
+			packageProductDependencies = (
+				5565FAE72BAB20E2003E00FB /* KeychainSwift */,
+			);
 			productName = FileManagerHW;
 			productReference = 55DDB2EC2B47FB7C0038BF46 /* FileManagerHW.app */;
 			productType = "com.apple.product-type.application";
@@ -194,6 +167,9 @@
 				Base,
 			);
 			mainGroup = 55DDB2E32B47FB7C0038BF46;
+			packageReferences = (
+				5565FAE62BAB20E2003E00FB /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = 55DDB2ED2B47FB7C0038BF46 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,49 +190,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		44DA9C7176A743702697B146 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FileManagerHW-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB015D53E3EEF051A9E7F80F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 8;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FileManagerHW/Pods-FileManagerHW-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-FileManagerHW/Pods-FileManagerHW-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FileManagerHW/Pods-FileManagerHW-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55DDB2E82B47FB7C0038BF46 /* Sources */ = {
@@ -407,7 +340,6 @@
 		};
 		55DDB3012B47FB810038BF46 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7D75D342188B251EBFEB944 /* Pods-FileManagerHW.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -435,7 +367,6 @@
 		};
 		55DDB3022B47FB810038BF46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24F0476E2AB0A45F3FFE22AD /* Pods-FileManagerHW.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -483,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5565FAE62BAB20E2003E00FB /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 20.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5565FAE72BAB20E2003E00FB /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5565FAE62BAB20E2003E00FB /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 55DDB2E42B47FB7C0038BF46 /* Project object */;
 }
